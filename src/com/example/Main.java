@@ -13,11 +13,9 @@ public class Main {
         try {
             Scanner scan1 = new Scanner(System.in);
             System.out.println("What month do you need?");
-            String chooseMonth = scan1.nextLine().toLowerCase(); // TODO: get this thing working with that line 19
+            String chooseMonth = scan1.nextLine().toUpperCase();
 
-
-            Month month = Month.JANUARY;
-
+            Month month = Month.valueOf(chooseMonth);
 
             switch (month) {
                 case JANUARY:
